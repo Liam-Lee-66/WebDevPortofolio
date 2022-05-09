@@ -1,0 +1,192 @@
+@import url('base.css');
+
+/* font */
+* {
+    font-family: 'Righteous', cursive;
+    font-weight: 300;
+}
+
+h1{
+    font-size: 35px;
+}
+h2 {
+    font-size: 50px;
+}
+h3{
+    font-size: 30px;
+}
+p{
+    font-size: 20px;
+}
+li {
+    font-size: 18px;
+}
+
+button {
+    width: 130px;
+    background-color: rgb(241, 189, 76);
+    padding: 15px;
+    border-radius: 18px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all .25s ease-in-out;
+}
+button:hover {
+    cursor: pointer;
+    background-color: rgb(155, 113, 23);
+    color: #f2f2f3;
+}
+
+a {
+    text-decoration: none;
+    color: #f2f2f3;
+}
+
+
+
+header {
+    width: 100%;
+    padding: 25px;
+    background-color: rgba(94, 94, 94, 0.4);
+    color: #f2f2f3;
+    position: fixed;
+    backdrop-filter: blur(5px);
+}
+
+header *{
+    animation: fadeIn 1s ease-in-out;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header .container ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+header .container ul li + li{
+    margin-left: 18px;
+}
+
+.landin {
+    width: 100%;
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url('../img/benjamin-lehman-GNyjCePVRs8-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.two {
+    background-image: url('../img/tyler-lastovich-e31ANd1PXUw-unsplash.jpg');
+}
+.two .shade {
+    text-align: left;
+    justify-content: center;
+    align-items: flex-start;
+
+    background-color: rgba(65, 65, 65, 0.4);
+}
+.two .shade p {
+    margin-top: 10px;
+}
+
+.shade{
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(94, 94, 94, 0.4);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: #f2f2f3;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+}
+.shade .row {
+    margin-top: 40px;
+}
+.shade .row i {
+    position: relative;
+    animation: none;
+    font-size: 35px;
+}
+i:hover {
+    cursor: pointer;
+}
+.shade .row a + a {
+    margin-left: 10px;
+}
+
+
+.shade h3, button {
+    margin-top: 10px;
+}
+.shade i {
+    font-size: 40px;
+    /* margin: auto; */
+    bottom: 20px;
+    position: absolute;
+
+    animation: hover 1.25s infinite;
+}
+
+.content {
+    margin-top: 40px;
+}
+
+.img {
+    width: 60%;
+    height: 500px;
+    background-image: url('../img/samsung-memory-LEtQUR-3zwM-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes hover {
+    0% {
+        bottom: 20px;
+    }
+    50% {
+        bottom: 40px;
+    }
+    100% {
+        bottom: 20px;
+    }
+}
+
+
+
+
+
+
+.revealUp {
+    opacity: 0;
+    visibility: hidden;
+}
