@@ -52,14 +52,22 @@ console.log('js running');
 
 const arrowBtn = document.getElementById('arwbtn');
 const whoAmI = document.getElementById('btn');
+const title = document.getElementById('title')
 
-function goDownAuto (){
-    window.scrollTo(0, document.getElementById('dos').scrollHeight);
+function moveToSecondBanner() {
+  window.scrollTo(0, document.getElementById('dos').scrollHeight);
+}
+
+function moveToFirstBanner() {
+  window.scrollTo(0, 0);
 }
 
 arrowBtn.onclick = function () {
-    goDownAuto();
+  moveToSecondBanner();
 }
 whoAmI.onclick = function () {
-    goDownAuto();
+  moveToSecondBanner();
+}
+title.onclick = function () {
+  moveToFirstBanner();
 }

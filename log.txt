@@ -1,0 +1,284 @@
+
+LiaLee@EC-NSSCH-182199 MINGW64 /d/HDD stuff/MITT/VSC/Tools and automation (master)
+$ git init
+Reinitialized existing Git repository in D:/HDD stuff/MITT/VSC/Tools and automation/.git/
+
+LiaLee@EC-NSSCH-182199 MINGW64 /d/HDD stuff/MITT/VSC/Tools and automation (master)
+$ git remote add origin https://github.com/Liam-Lee-66/WebPortofolio.git
+
+LiaLee@EC-NSSCH-182199 MINGW64 /d/HDD stuff/MITT/VSC/Tools and automation (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Git/    
+        Project/
+        Repo/
+        WebDevPortofolio/
+        testing/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+LiaLee@EC-NSSCH-182199 MINGW64 /d/HDD stuff/MITT/VSC/Tools and automation (master)
+$ git remote remove origin https://github.com/Liam-Lee-66/WebPortofolio.git
+usage: git remote remove <name>
+
+
+LiaLee@EC-NSSCH-182199 MINGW64 /d/HDD stuff/MITT/VSC/Tools and automation (master)
+$ git remote origin
+error: Unknown subcommand: origin
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+LiaLee@EC-NSSCH-182199 MINGW64 /d/HDD stuff/MITT/VSC/Tools and automation (master)
+$ git clear
+git: 'clear' is not a git command. See 'git --help'.
+
+The most similar command is
+        clean
+
+LiaLee@EC-NSSCH-182199 MINGW64 /d/HDD stuff/MITT/VSC/Tools and automation (master)
+$ git clean
+fatal: clean.requireForce defaults to true and neither -i, -n, nor -f given; refusing to clean
+
+LiaLee@EC-NSSCH-182199 MINGW64 /d/HDD stuff/MITT/VSC/Tools and automation (master)
+$ git clean -
+fatal: clean.requireForce defaults to true and neither -i, -n, nor -f given; refusing to clean
+
+LiaLee@EC-NSSCH-182199 MINGW64 /d/HDD stuff/MITT/VSC/Tools and automation (master)
+$ git clean -i
+
+LiaLee@EC-NSSCH-182199 MINGW64 /d/HDD stuff/MITT/VSC/Tools and automation (master)
+$ git commit 
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Git/
+        Project/
+        Repo/
+        WebDevPortofolio/
+        testing/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+LiaLee@EC-NSSCH-182199 MINGW64 /d/HDD stuff/MITT/VSC/Tools and automation (master)
+$ cd Repo/
+
+LiaLee@EC-NSSCH-182199 MINGW64 /d/HDD stuff/MITT/VSC/Tools and automation/Repo (idkWhatToName)
+$ git status
+On branch idkWhatToName
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    assets/dontQuestionIt.jpg
+        deleted:    index.js
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        WebDevPortofolio/
+        assets/dontQuestionIt1.jpg
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+LiaLee@EC-NSSCH-182199 MINGW64 /d/HDD stuff/MITT/VSC/Tools and automation/Repo (idkWhatToName)
+$ git add *
+warning: adding embedded git repository: WebDevPortofolio
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint: 
+hint:   git submodule add <url> WebDevPortofolio
+hint: 
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint: 
+hint:   git rm --cached WebDevPortofolio
+hint: 
+hint: See "git help submodule" for more information.
+
+LiaLee@EC-NSSCH-182199 MINGW64 /d/HDD stuff/MITT/VSC/Tools and automation/Repo (idkWhatToName)
+$ git add -a
+error: unknown switch `a'
+usage: git add [<options>] [--] <pathspec>...
+
+    -n, --dry-run         dry run
+    -v, --verbose         be verbose
+
+    -i, --interactive     interactive picking
+    -p, --patch           select hunks interactively
+    -e, --edit            edit current diff and apply
+    -f, --force           allow adding otherwise ignored files
+    -u, --update          update tracked files
+    --renormalize         renormalize EOL of tracked files (implies -u)
+    -N, --intent-to-add   record only the fact that the path will be added later
+    -A, --all             add changes from all tracked and untracked files
+    --ignore-removal      ignore paths removed in the working tree (same as --no-all)
+    --refresh             don't add, only refresh the index
+    --ignore-errors       just skip files which cannot be added because of errors
+    --ignore-missing      check if - even missing - files are ignored in dry run
+    --chmod (+|-)x        override the executable bit of the listed files
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+
+LiaLee@EC-NSSCH-182199 MINGW64 /d/HDD stuff/MITT/VSC/Tools and automation/Repo (idkWhatToName)
+$ git commit -m "A"
+[idkWhatToName 0f21876] A
+ 3 files changed, 1 insertion(+)
+ create mode 160000 WebDevPortofolio
+ delete mode 100644 assets/dontQuestionIt.jpg
+ create mode 100644 assets/dontQuestionIt1.jpg
+
+LiaLee@EC-NSSCH-182199 MINGW64 /d/HDD stuff/MITT/VSC/Tools and automation/Repo (idkWhatToName)
+$ git pull 
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> idkWhatToName
+
+
+LiaLee@EC-NSSCH-182199 MINGW64 /d/HDD stuff/MITT/VSC/Tools and automation/Repo (idkWhatToName)
+$ git pull remote main
+fatal: 'remote' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+LiaLee@EC-NSSCH-182199 MINGW64 /d/HDD stuff/MITT/VSC/Tools and automation/Repo (idkWhatToName)
+$ git pull main
+fatal: 'main' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+LiaLee@EC-NSSCH-182199 MINGW64 /d/HDD stuff/MITT/VSC/Tools and automation/Repo (idkWhatToName)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+LiaLee@EC-NSSCH-182199 MINGW64 /d/HDD stuff/MITT/VSC/Tools and automation/Repo (idkWhatToName)
+$ git status
+On branch idkWhatToName
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    WebDevPortofolio
+        deleted:    index.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+LiaLee@EC-NSSCH-182199 MINGW64 /d/HDD stuff/MITT/VSC/Tools and automation/Repo (idkWhatToName)
+$ git add*
+git: 'add*' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+LiaLee@EC-NSSCH-182199 MINGW64 /d/HDD stuff/MITT/VSC/Tools and automation/Repo (idkWhatToName)
+$ cd ../WebDevPortofolio/
+
+LiaLee@EC-NSSCH-182199 MINGW64 /d/HDD stuff/MITT/VSC/Tools and automation/WebDevPortofolio (master)
+$ cd init
+bash: cd: init: No such file or directory
+
+LiaLee@EC-NSSCH-182199 MINGW64 /d/HDD stuff/MITT/VSC/Tools and automation/WebDevPortofolio (master)
+$ git init
+Reinitialized existing Git repository in D:/HDD stuff/MITT/VSC/Tools and automation/WebDevPortofolio/.git/
+
+LiaLee@EC-NSSCH-182199 MINGW64 /d/HDD stuff/MITT/VSC/Tools and automation/WebDevPortofolio (master)
+$ git remote add origin https://github.com/Liam-Lee-66/WebDevPortofolio.git
+fatal: remote origin already exists.
+
+LiaLee@EC-NSSCH-182199 MINGW64 /d/HDD stuff/MITT/VSC/Tools and automation/WebDevPortofolio (master)
+$ git remote remove origin
+
+LiaLee@EC-NSSCH-182199 MINGW64 /d/HDD stuff/MITT/VSC/Tools and automation/WebDevPortofolio (master)
+$ git -v
+unknown option: -v
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+LiaLee@EC-NSSCH-182199 MINGW64 /d/HDD stuff/MITT/VSC/Tools and automation/WebDevPortofolio (master)
+$ git remote -v
+
+LiaLee@EC-NSSCH-182199 MINGW64 /d/HDD stuff/MITT/VSC/Tools and automation/WebDevPortofolio (master)
+$ git git remote add origin https://github.com/Liam-Lee-66/WebDevPortofolio.git
+git: 'git' is not a git command. See 'git --help'.
+
+The most similar command is
+        init
+
+LiaLee@EC-NSSCH-182199 MINGW64 /d/HDD stuff/MITT/VSC/Tools and automation/WebDevPortofolio (master)
+$ git branch -M main
+
+LiaLee@EC-NSSCH-182199 MINGW64 /d/HDD stuff/MITT/VSC/Tools and automation/WebDevPortofolio (main)
+$ git remote add origin https://github.com/Liam-Lee-66/WebDevPortofolio.git
+
+LiaLee@EC-NSSCH-182199 MINGW64 /d/HDD stuff/MITT/VSC/Tools and automation/WebDevPortofolio (main)
+$ git branch -M main
+
+LiaLee@EC-NSSCH-182199 MINGW64 /d/HDD stuff/MITT/VSC/Tools and automation/WebDevPortofolio (main)
+$ git push -u origin main
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (12/12), 555.11 KiB | 21.35 MiB/s, done.
+Total 12 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Liam-Lee-66/WebDevPortofolio.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+LiaLee@EC-NSSCH-182199 MINGW64 /d/HDD stuff/MITT/VSC/Tools and automation/WebDevPortofolio (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+LiaLee@EC-NSSCH-182199 MINGW64 /d/HDD stuff/MITT/VSC/Tools and automation/WebDevPortofolio (main)
+$ git add *
+
+LiaLee@EC-NSSCH-182199 MINGW64 /d/HDD stuff/MITT/VSC/Tools and automation/WebDevPortofolio (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+LiaLee@EC-NSSCH-182199 MINGW64 /d/HDD stuff/MITT/VSC/Tools and automation/WebDevPortofolio (main)
+$

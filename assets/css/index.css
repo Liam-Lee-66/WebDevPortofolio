@@ -2,7 +2,7 @@
 
 /* font */
 * {
-    font-family: 'Righteous', cursive;
+    font-family: 'Righteous', sans-serif;
     font-weight: 300;
 }
 
@@ -18,16 +18,21 @@ h3{
 p{
     font-size: 20px;
 }
-li {
-    font-size: 18px;
+
+i {
+    transition: all .25s ease-in-out;
+}
+i:hover {
+    color: rgb(241, 189, 76);
+    cursor: pointer;;
 }
 
 button {
-    width: 130px;
+    width: 180px;
     background-color: rgb(241, 189, 76);
-    padding: 15px;
+    padding: 13px;
     border-radius: 18px;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 500;
     transition: all .25s ease-in-out;
 }
@@ -50,7 +55,7 @@ header {
     background-color: rgba(94, 94, 94, 0.4);
     color: #f2f2f3;
     position: fixed;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(50px);
 }
 
 header *{
@@ -71,8 +76,26 @@ header .container ul {
     align-items: center;
 }
 header .container ul li + li{
-    margin-left: 18px;
+    margin-left: 21px;
 }
+header .container ul li a i {
+    font-size: 34px;
+    color: #f2f2f3;
+}
+header .container ul li a i:hover {
+    color: rgb(241, 189, 76);
+}
+.fa-bars {
+    display: none;
+}
+#title {
+    transition: all .25s ease-in-out;
+}
+#title:hover {
+    color: rgb(241, 189, 76);   
+    cursor: pointer;
+}
+
 
 .landin {
     width: 100%;
@@ -86,6 +109,7 @@ header .container ul li + li{
     background-image: url('../img/benjamin-lehman-GNyjCePVRs8-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .two {
@@ -96,7 +120,7 @@ header .container ul li + li{
     justify-content: center;
     align-items: flex-start;
 
-    background-color: rgba(65, 65, 65, 0.4);
+    background-color: rgba(65, 65, 65, 0.7);
 }
 .two .shade p {
     margin-top: 10px;
@@ -115,24 +139,6 @@ header .container ul li + li{
 
     color: #f2f2f3;
 }
-.row {
-    display: flex;
-    flex-direction: row;
-}
-.shade .row {
-    margin-top: 40px;
-}
-.shade .row i {
-    position: relative;
-    animation: none;
-    font-size: 35px;
-}
-i:hover {
-    cursor: pointer;
-}
-.shade .row a + a {
-    margin-left: 10px;
-}
 
 
 .shade h3, button {
@@ -149,15 +155,6 @@ i:hover {
 
 .content {
     margin-top: 40px;
-}
-
-.img {
-    width: 60%;
-    height: 500px;
-    background-image: url('../img/samsung-memory-LEtQUR-3zwM-unsplash.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
 }
 
 @keyframes fadeIn {
@@ -181,6 +178,17 @@ i:hover {
     }
 }
 
+
+
+@media only screen and (max-width:600px) {
+    header .container h1 {
+        font-size: 28px;
+    }
+    .fa-bars {
+        display: block;
+        font-size: 30px;
+    }
+}
 
 
 
